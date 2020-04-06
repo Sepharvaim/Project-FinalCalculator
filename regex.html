@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      width: 650px;
+      margin: 0 auto;
+    }
+    p {
+      display: block;
+      /* border: 1px solid black; */
+    }
+    h1 {
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>Regular Expression(Regex) how to match any pattern of text</h1>
+    <p>Typically, these patterns (which can be beautifully intricate and precise) are used for four main tasks: to find text within a larger body of text; to validate that a string conforms to a desired format; to replace text (or insert text at matched positions, which is the same process); and to split strings.</p>
+    <P>
+    <p>A regex is a text string that describes a pattern that a regex engine uses in order to find text (or positions) in a body of text, typically for the purposes of validating, finding, replacing or splitting.</p>
+    MetaCharacters (Need to be escaped):
+    <li> . [ { ( ) \ ^ $ | ? * + Vuol dire se cerco uno di questi caratteri ho bisogno di fare escape con \ backslash </li>
+    <li>. Match any single character    \. this only the dot </li>
+    </P>
+    <p> 
+      Cerca un solo valore una volta, per cercare piu valori in successione ripetere il Segno o utilizzare un 
+      <li>.  - Any Character excepet new line </li>
+      <li>\d - Digit 0 to 9</li>
+      <li>\D - all But excepet a digit 0 to 9</li>
+      <li>\w - matches any word character (equal to [a-zA-Z0-9_]) </li>
+      <li>\W - matches any non-word character (equal to [^a-zA-Z0-9_])</li>
+      <li>\s - matches any whitespace character (equal to [\r\n\t\f\v ])</li>
+      <li>\s - matches any non-whitespace character (equal to [^\r\n\t\f\v ])e </li>
+    </p>
+    
+    <p>
+      Metacharacter
+      Anchors they dont match for character but for invisible position before or after character
+
+      <li>\b - Word Boundary   match someting with space before or after \bHa ===>  Ha no space ahead</li>
+      <li>\B - not a word Boundary matcha chi davanti ha qualcosa \Babc metcha bc xk hanno altre lettere avanti </li>
+      
+    </p>
+    <p>
+      <li>[abc] - matches a single character in the list abc (case sensitive)</li>
+      <li>[^abc] - Match a single character not present in the square bracket</li>
+      <li>^ - Asserts position at start of the string</li>
+      <li>$ - Asserts position at the end of the string, or before the line terminator right at the end of the string</li>
+      <li>() - Capturing Group</li>
+    </p>
+    <p>
+      Quantifierts: 
+      <li>* - Matches between zero and unlimited times, as many times as possible, giving back as needed</li>
+      <li>+ - Matches between one and unlimited times, as many times as possible, giving back as needed</li>
+      <li>? - Matches between zero and one times, as many times as possible, giving back as needed</li>
+      <li>{n} - Matches exactly n times</li> 
+      <li>{n,m} - Matches between min and max times, as many times as possible, giving back as needed  </li>
+      <li>{n,} - Matches at least n or more times</li>
+    </p>
+  </div>
+</body>
+</html>
